@@ -2,17 +2,16 @@ import streamlit as st
 from PIL import Image
 import google.generativeai as genai
 
-# Set your Gemini API key
+
 GOOGLE_API_KEY = "AIzaSyBHL4RPc1ENg_8MFKsOVelhUncDQKZ2pYc"
 genai.configure(api_key=GOOGLE_API_KEY)
 
-# Initialize the Gemini model
+
 model = genai.GenerativeModel('gemini-1.5-pro')
 
 st.set_page_config(page_title="Welcome to I-Copilot")
 st.title("Intelligent Copilot Multimodal")
 
-# Create two tabs: one for text, one for image
 tab1, tab2 = st.tabs(["🧠 Ask anything", "🖼️ Image Analyzer"])
 
 with tab1:
@@ -42,7 +41,7 @@ with tab2:
         if st.button("Analyze Image", key="image"):
             with st.spinner("Generating response..."):
                 try:
-                    # Gemini supports multimodal input: [prompt, image]
+                    
                     contents = []
                     if prompt.strip():
                         contents.append(prompt)
