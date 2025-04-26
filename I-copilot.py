@@ -32,7 +32,7 @@ with tab1:
 
 with tab2:
     st.header("Image Analyzer")
-    st.write("Upload an image and Gemini will describe or analyze it.")
+    st.write("Upload an image and I-copilot will describe or analyze it.")
     uploaded_file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
     prompt = st.text_input("Optional: Add a prompt for the image (e.g., 'Describe this image')", key="imgprompt")
     if uploaded_file is not None:
