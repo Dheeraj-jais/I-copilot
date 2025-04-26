@@ -56,4 +56,4 @@ with tab2:
 
 
 
-st.markdown("***Developed by-: Dheeraj jaiswal***")
+st.markdown("***Developed by-: Dheeraj jaiswal*** | Powered by Google")
