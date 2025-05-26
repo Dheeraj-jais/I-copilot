@@ -17,7 +17,7 @@ tab1, tab2 = st.tabs(["🧠 Ask anything", "🖼️ Image Analyzer"])
 
 with tab1:
     st.header("Content Generator")
-    st.write("Ask I-Copilot for creative ideas")
+    st.write("Ask I-Copilot for creative ideas or information.")
     user_input = st.text_input("Enter your prompt:", value="")
     if st.button("Generate Idea"):
         if user_input.strip() == "":
