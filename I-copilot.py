@@ -16,7 +16,7 @@ st.markdown("***Developed by-: Dheeraj jaiswal*** | Powered by Google")
 tab1, tab2 = st.tabs(["🧠 Ask anything", "🖼️ Image Analyzer"])
 
 with tab1:
-    st.header("Content Generator")
+    st.header("Chat with I-Copilot")
     st.write("Ask I-Copilot for creative ideas or information.")
     user_input = st.text_input("Enter your prompt:", value="")
     if st.button("Generate Idea"):
