@@ -12,6 +12,7 @@ model = genai.GenerativeModel('gemini-2.5-flash-preview-04-17')
 st.set_page_config(page_title="Welcome to I-Copilot", page_icon="🤖")
 st.title("🤖 Intelligent Copilot Multimodal")
 st.markdown("***Developed by-: Dheeraj jaiswal*** | Powered by Google")
+
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
