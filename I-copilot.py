@@ -9,8 +9,8 @@ genai.configure(api_key=GOOGLE_API_KEY)
 # Initialize the Gemini model
 model = genai.GenerativeModel('gemini-2.5-flash-preview-04-17')
 
-st.set_page_config(page_title="Welcome to I-Copilot")
-st.title("Intelligent Copilot Multimodal")
+st.set_page_config(page_title="Welcome to I-Copilot", page_icon="🤖")
+st.title("🤖 Intelligent Copilot Multimodal")
 st.markdown("***Developed by-: Dheeraj jaiswal*** | Powered by Google")
 # Create two tabs: one for text, one for image
 tab1, tab2 = st.tabs(["🧠 Ask anything", "🖼️ Image Analyzer"])
