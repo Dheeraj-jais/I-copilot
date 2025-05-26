@@ -12,6 +12,15 @@ model = genai.GenerativeModel('gemini-2.5-flash-preview-04-17')
 st.set_page_config(page_title="Welcome to I-Copilot", page_icon="🤖")
 st.title("🤖 Intelligent Copilot Multimodal")
 st.markdown("***Developed by-: Dheeraj jaiswal*** | Powered by Google")
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # Create two tabs: one for text, one for image
 tab1, tab2 = st.tabs(["🧠 Ask anything", "🖼️ Image Analyzer"])
 
