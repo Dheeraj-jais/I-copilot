@@ -19,11 +19,11 @@ with tab1:
     st.header("Chat with I-Copilot")
     st.write("Ask I-Copilot for creative ideas or information.")
     user_input = st.text_input("Enter your prompt:", value="")
-    if st.button("Generate Idea"):
+    if st.button("Send"):
         if user_input.strip() == "":
             st.warning("Please enter a prompt.")
         else:
-            with st.spinner("Thinking..."):
+            with st.spinner("I-Copilot is thinking..."):
                 try:
                     response = model.generate_content(user_input)
                     st.success("Response:")
