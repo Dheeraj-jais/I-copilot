@@ -11,7 +11,7 @@ model = genai.GenerativeModel('gemini-2.5-flash-preview-04-17')
 
 st.set_page_config(page_title="Welcome to I-Copilot")
 st.title("Intelligent Copilot Multimodal")
-
+st.markdown("***Developed by-: Dheeraj jaiswal*** | Powered by Google")
 # Create two tabs: one for text, one for image
 tab1, tab2 = st.tabs(["🧠 Ask anything", "🖼️ Image Analyzer"])
 
@@ -33,7 +33,7 @@ with tab1:
 
 with tab2:
     st.header("Image Analyzer")
-    st.write("Upload an image and Gemini will describe or analyze it.")
+    st.write("Upload an image and I-copilot will describe or analyze it.")
     uploaded_file = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
     prompt = st.text_input("Optional: Add a prompt for the image (e.g., 'Describe this image')", key="imgprompt")
     if uploaded_file is not None:
@@ -54,7 +54,3 @@ with tab2:
                     st.error(f"Error generating content: {e}")
     else:
         st.info("Please upload an image to get started.")
-
-
-
-st.markdown("***Developed by-: Dheeraj jaiswal*** | Powered by Google")
